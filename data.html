@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資料申請 - STEM人才長期追蹤調查</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 頂部信息欄 -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt"></i> (02) 1234-5678</span>
+                <span><i class="fas fa-envelope"></i> stem@example.com</span>
+            </div>
+            <div class="top-bar-login">
+                <button class="login-btn">登入</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 頁首 -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="STEM人才長期追蹤調查">
+                </a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="news.html">最新消息</a></li>
+                    <li><a href="about.html">計畫簡介</a></li>
+                    <li><a href="team.html">計畫團隊</a></li>
+                    <li><a href="results.html">調查成果</a></li>
+                    <li><a href="data.html">資料申請</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 資料申請內容 -->
+        <div class="page-container">
+            <nav class="sub-nav">
+                <h2>資料申請</h2>
+                <ul>
+                    <li><a href="#application-process">申請流程</a></li>
+                    <li><a href="#data-description">資料說明</a></li>
+                    <li><a href="#application-form">申請表單</a></li>
+                    <li><a href="#faq">常見問題</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <section id="application-process">
+                    <h2>申請流程</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>填寫申請表</h3>
+                            <p>填寫基本資料與研究計畫說明</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>審核評估</h3>
+                            <p>計畫團隊審核申請內容</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>簽署協議</h3>
+                            <p>簽署資料使用協議書</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>資料釋出</h3>
+                            <p>提供核准的資料檔案</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="data-description">
+                    <h2>資料說明</h2>
+                    <p>本計畫提供STEM人才追蹤調查資料供研究使用。申請者需符合以下條件：</p>
+                    <ul>
+                        <li>具備研究機構或學術單位身份</li>
+                        <li>研究目的符合計畫宗旨</li>
+                        <li>遵守資料使用規範</li>
+                        <li>提供研究計畫書</li>
+                    </ul>
+                </section>
+
+                <section id="application-form">
+                    <h2>申請表單</h2>
+                    <form class="application-form">
+                        <div class="form-group">
+                            <label for="institution">機構名稱</label>
+                            <input type="text" id="institution" name="institution" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="researcher">研究人員姓名</label>
+                            <input type="text" id="researcher" name="researcher" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="position">職稱</label>
+                            <input type="text" id="position" name="position" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">聯絡Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="research-title">研究計畫名稱</label>
+                            <input type="text" id="research-title" name="research-title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="research-purpose">研究目的</label>
+                            <textarea id="research-purpose" name="research-purpose" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="data-request">所需資料類型</label>
+                            <select id="data-request" name="data-request" required>
+                                <option value="">請選擇</option>
+                                <option value="public">公開資料</option>
+                                <option value="research">研究資料</option>
+                                <option value="custom">特殊需求</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="attachment">研究計畫書</label>
+                            <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx" required>
+                        </div>
+                        <button type="submit" class="submit-btn">提交申請</button>
+                    </form>
+                </section>
+
+                <section id="faq">
+                    <h2>常見問題</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h3>申請審核需要多久？</h3>
+                            <p>一般申請案件約需2-3週審核時間，特殊需求案件可能需要更長時間。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>資料使用期限為何？</h3>
+                            <p>核准使用期限為一年，期滿可申請延長。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>如何確保資料安全？</h3>
+                            <p>申請者需簽署保密協議，並遵守資料使用規範。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>快速連結</h3>
+                <ul>
+                    <li><a href="news.html">最新消息</a></li>
+                    <li><a href="about.html">計畫簡介</a></li>
+                    <li><a href="team.html">計畫團隊</a></li>
+                    <li><a href="results.html">調查成果</a></li>
+                    <li><a href="data.html">資料申請</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>計畫簡介</h3>
+                <ul>
+                    <li><a href="about.html#purpose">計畫目的</a></li>
+                    <li><a href="about.html#scope">調查範圍</a></li>
+                    <li><a href="about.html#methodology">研究方法</a></li>
+                    <li><a href="about.html#timeline">計畫時程</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>調查成果</h3>
+                <ul>
+                    <li><a href="results.html#overview">成果概述</a></li>
+                    <li><a href="results.html#reports">研究報告</a></li>
+                    <li><a href="results.html#publications">學術發表</a></li>
+                    <li><a href="results.html#media">媒體報導</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>聯絡資訊</h3>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> (02) 1234-5678</li>
+                    <li><i class="fas fa-envelope"></i> stem@example.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 台北市大安區XX路XX號</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 STEM人才長期追蹤調查. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 回到頂部按鈕 -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mainNav = document.querySelector('.main-nav');
+            const backToTopBtn = document.getElementById('back-to-top');
+            
+            // 漢堡選單功能
+            mobileMenuBtn.addEventListener('click', function() {
+                mainNav.classList.toggle('show');
+            });
+
+            // 點擊導航連結時關閉選單
+            const navLinks = document.querySelectorAll('.main-nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mainNav.classList.remove('show');
+                });
+            });
+
+            // 回到頂部按鈕功能
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
